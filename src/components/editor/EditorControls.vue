@@ -8,11 +8,11 @@
         <input-control label="Color 4" @input="update" did="color4"/><br/>
         <input-control label="Color 5" @input="update" did="color5"/><br/>
       </p>
-      <div :style="`background-color:${color1}; height:10vw; width:10vw;`"></div>
-      <div :style="`background-color:${color2}; height:10vw; width:10vw;`"></div>
-      <div :style="`background-color:${color3}; height:10vw; width:10vw;`"></div>
-      <div :style="`background-color:${color4}; height:10vw; width:10vw;`"></div>
-      <div :style="`background-color:${color5}; height:10vw; width:10vw;`"></div>
+      <div :style="`background-color:${color1}; height:2vw; width:10vw;`"></div>
+      <div :style="`background-color:${color2}; height:2vw; width:10vw;`"></div>
+      <div :style="`background-color:${color3}; height:2vw; width:10vw;`"></div>
+      <div :style="`background-color:${color4}; height:2vw; width:10vw;`"></div>
+      <div :style="`background-color:${color5}; height:2vw; width:10vw;`"></div>
     </div>
   </div>
 </template>

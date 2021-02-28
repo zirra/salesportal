@@ -35,4 +35,31 @@ p { text-align: left; margin: 2px; padding: 2px; }
   width: 100vw; 
   margin: 0 10vw auto;
 }
+
+.border-radius {
+  border-radius: 20%;
+}
+
+.border-thickness-sm {
+  border: 5px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.border-thickness-md {
+  border: 10px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.border-thickness-lg {
+  border:15px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.card-mini {
+  width: 10vw;
+  height: 10vw;
+}
 </style>
