@@ -9,6 +9,13 @@ Vue.mixin({
     }),
     debug(err) {
       console.log(err)
+    },
+    styles(target) {
+      console.log(target)
+    },
+    classes(target) {
+      console.log(target)
+      return (`${target} border-radius border-thickness-sm`)
     }
   },
   computed: {

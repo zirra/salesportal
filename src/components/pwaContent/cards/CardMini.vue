@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="classes('card-mini')" :style="styles('card-mini')">
     card - mini
   </div>
 </template>
