@@ -61,5 +61,8 @@ p { text-align: left; margin: 2px; padding: 2px; }
 .card-mini {
   width: 10vw;
   height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

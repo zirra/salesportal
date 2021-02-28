@@ -1,4 +1,6 @@
 const state = {
+  borderRadius: false,
+  borderSize: 'sm',
   color1: null,
   color2: null,
   color3: null,
@@ -9,6 +11,9 @@ const state = {
 const mutations = {
   mutateColor(state, obj) {
     state[obj.did] = obj.value
+  },
+  mutateBorderSize(state, size) {
+    state.borderSize = size
   }
 }
 
@@ -16,6 +21,8 @@ const actions = {
 }
 
 const getters = {
+  borderRadius: (state) => { return state.borderRadius },
+  borderSize: (state) => { return state.borderSize },
   color1: (state) => { return `#${state.color1}` },
   color2: (state) => { return `#${state.color2}` },
   color3: (state) => { return `#${state.color3}` },

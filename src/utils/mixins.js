@@ -5,6 +5,7 @@ Vue.mixin({
   methods: {
     ...mapActions({}),
     ...mapMutations({
+      mutateBorderSize: 'mutateBorderSize',
       mutateColor: 'mutateColor'
     }),
     debug(err) {
@@ -14,12 +15,18 @@ Vue.mixin({
       console.log(target)
     },
     classes(target) {
-      console.log(target)
-      return (`${target} border-radius border-thickness-sm`)
+      let classes = ''
+      classes += target
+      classes += ' border-radius'
+      if(this.borderSize != null) {
+        classes += ` border-thickness-${this.borderSize}`
+      }
+      return (`${classes}`)
     }
   },
   computed: {
     ...mapGetters({
+      borderSize: 'borderSize',
       color1: 'color1',
       color2: 'color2',
       color3: 'color3',
