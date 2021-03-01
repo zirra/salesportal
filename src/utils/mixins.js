@@ -17,7 +17,9 @@ Vue.mixin({
     classes(target) {
       let classes = ''
       classes += target
-      classes += ' border-radius'
+      if(this.borderRadius) {
+        classes += ' border-radius'
+      }
       if(this.borderSize != null) {
         classes += ` border-thickness-${this.borderSize}`
       }
@@ -26,6 +28,7 @@ Vue.mixin({
   },
   computed: {
     ...mapGetters({
+      borderRadius: 'borderRadius',
       borderSize: 'borderSize',
       color1: 'color1',
       color2: 'color2',
