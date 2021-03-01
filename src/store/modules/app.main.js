@@ -10,6 +10,7 @@ const state = {
 
 const mutations = {
   mutateColor(state, obj) {
+    console.log(obj)
     state[obj.did] = obj.value
   },
   mutateBorderSize(state, size) {
