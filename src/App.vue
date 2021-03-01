@@ -43,19 +43,16 @@ p { text-align: left; margin: 2px; padding: 2px; }
 .border-thickness-sm {
   border: 5px;
   border-style: solid;
-  border-color: #000;
 }
 
 .border-thickness-md {
   border: 10px;
   border-style: solid;
-  border-color: #000;
 }
 
 .border-thickness-lg {
   border:15px;
   border-style: solid;
-  border-color: #000;
 }
 
 .card-mini {
