@@ -12,7 +12,8 @@ Vue.mixin({
       console.log(err)
     },
     styles(target) {
-      console.log(target)
+      console.log(target + this.color1)
+      return `border-color: ${this.color1};`
     },
     classes(target) {
       let classes = ''
