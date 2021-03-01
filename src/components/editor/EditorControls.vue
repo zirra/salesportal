@@ -30,8 +30,13 @@ export default {
 
   methods: {
     update (target) {
-      if(target.value.length == 6) {
-        this.mutateColor(target)
+      let len = target.value.length
+      if(len === 6) {
+        let hex = target.value
+        let good = ( typeof hex === 'string'
+          && hex.length === 6
+          && !isNaN(Number('0x' + hex)))
+        good ? this.mutateColor(target) : alert('NEED VALID HEX RGB')
       } else {
         this.mutateColor({value: 'fff', did: target.did})
       }
